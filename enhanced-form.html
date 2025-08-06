@@ -3,9 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WEEK 2 ASSIGNMENT</title>
 </head>
 <body>
-    
+<!--Unordered list section for navigation-->
+    <header class="home">
+        <nav>
+            <ul>
+                <li type="none"><a href="#home">HOME</a></li>
+                <li type="none"><a href="#image">IMAGE</a></li>
+                <li type="none"><a href="#video">VIDEO</a></li>
+                <li type="none"><a href="#orderedList">ORDERED LIST</a></li>
+                <li type="none"><a href="#table">TABLE</a></li>
+                <li type="none"><a href="#form">FORM</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+<!--image section-->
+    <section class="--image">
+        <h3>AN IMAGE SECTION</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnQXBADX20GCJ3ni8wybpNZSK9cE2S6NmYvA&s" alt="JUST A RANDOM IMAGE" height="300px">
+    </section>
+
+<!--Video section embeded from youtube with iframe-->
+    <section class="--Video">
+        <h2>VIDEO SECTION</h2>
+
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/0w5XZ49qJRM?si=ajER0BbucrCw0Zbw" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+        </iframe>
+
+    </section>
+<!--List section for ordered list -->
+    <section class="orderedList">
+        <h1>THIS SECTION HOLDS ORDERED LIST</h1>
+        <ol type="I">
+            <li>Schools</li>
+            <li>Universities</li>
+            <li>Hospitals</li>
+            <li>Industries</li>
+        </ol>
+    </section>
+
+
+<!--Table section-->
+    <section class="table"> 
+        <h1>THIS SECTION SHOWS A SAMPLE TABLE WITH 3 ROWS AND 5 COLUMNS</h1>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>GENDER</th>
+                    <th>AGE</th>
+                    <th>PHONE</th>
+                    <th>HOME COUNTY</th>
+                </tr>
+            </thead>
+
+
+            <tbody>
+                <tr>
+                    <td>Erick Wambugu</td>
+                    <td>Male</td>
+                    <td>24</td>
+                    <td>07178296XXX</td>
+                    <td>Nakuru</td>
+                </tr>
+
+                <tr>
+                    <td>John Doe</td>
+                    <td>Male</td>
+                    <td>50</td>
+                    <td>07123456789</td>
+                    <td>Nairobi</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </section>
+
+
+<!--Form section-->
+    <section class="form">
+        <h1>THIS SECTION HOLDS A FORM</h1>
+
+        <fieldset>
+            <legend>Collection Form</legend>
+            <form action="#destination_to_where_data_will_go" method="post">
+                <label for="name">NAME:</label>
+                <input type="text" name="name" id="name" placeholder="John Doe" required>
+
+                <br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="you@mail.com" required>
+
+                <br><br>
+
+                <label for="gender">Gender:</label>
+                <br>
+                <input type="radio" name="male" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="female" id="female">
+                <label for="female">Female</label>
+
+                <br><br>
+
+                <label for="dateofbirth">D.O.B</label>
+                <input type="date" name="dateofbirth" id="dateofbirth">
+
+                <br><br>
+
+                <label for="county">County:</label>
+                <select name="county" id="county">
+                    <option value="#">--Select your county--</option>
+                    <option value="Nairobi">Nairobi</option>
+                    <option value="Nakuru">Nakuru</option>
+                    <option value="Narok">Narok</option>
+                    <option value="Namanga">Namanga</option>
+                    <option value="Nanyuki">Nanyuki</option>
+                </select>
+
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </fieldset>
+    </section>
 </body>
 </html>
